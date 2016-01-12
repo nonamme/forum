@@ -87,6 +87,7 @@ nav	{
 		border-bottom: 1px solid #adadad;
 		width: 95%;
 		margin: 0 auto;
+
 		h2 {
 			padding: 0;
 			a {
@@ -102,5 +103,34 @@ nav	{
 	 		font-size: .7em;
 		}
 
+	}
+
+	h2 {
+		font-weight: 400;
+	    font-size: 1.25em;
+	    color: #3498db;
+	}
+
+	p {
+		color: #adadad;
+	}
+
+	h2, p {
+		padding: 5px 15px;
+	}
+
+	.buttons {
+		padding: 10px;
+		a {
+			padding: 5px 10px;
+		    text-decoration: none;
+		    color: #fff;
+		    background-color: #3498db;
+		    border-radius: 5px;
+		    margin: 0 1px;
+		    &:hover {
+		    	background-color: #23879A;
+		    }
+		}
 	}
 }

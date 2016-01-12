@@ -7,9 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-
+<nav>
+	<div class='logo'>Lewandowski Forum
+		<%= link_to 'New post', new_post_path %>
+	</div>
+</nav>
+<div class='wrapper'>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+	<%= yield %>
+</div>
 </body>
 </html>

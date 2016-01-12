@@ -34,7 +34,6 @@ nav	{
 	margin-bottom: 10px;
 
 	.logo {
-		position: relative;
 		padding: 10px 0;
 		width: 80vw;
 		max-width: 1140px;
@@ -45,8 +44,8 @@ nav	{
 	}
 
 	a {
-		position: absolute;
-		right: 0;
+		float: right;
+		margin: 0 5px;
 		text-decoration: none;
 		background-color: #3498db;
 		width: 100px;

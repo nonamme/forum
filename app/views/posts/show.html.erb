@@ -1,7 +1,13 @@
 <h2><%= @post.title %></h2>
 <p><%= @post.content %></p>
 
+<div>
+	<h2><%= @post.comments.count %></h2>
+		<%= render @post.comments %>
+	<h3>Reply for thread</h3>
+		<%= render "comments/form" %>
 
+</div>
 <div class='buttons'>
 	<%= link_to 'Edit', edit_post_path(@post) %>
 	<%= link_to 'Delete', post_path, :method => :delete, data:{ confirm: 'Are you ok with it?'} %>
